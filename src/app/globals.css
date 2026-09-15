@@ -32,7 +32,10 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .site-header nav a::after { position: absolute; right: 0; bottom: -10px; left: 0; height: 2px; background: var(--pink); content: ""; transform: scaleX(0); transform-origin: left; transition: transform 0.24s var(--ease); }
 .site-header nav a:hover, .site-header nav a.active { color: var(--ink); }
 .site-header nav a:hover::after, .site-header nav a.active::after { transform: scaleX(1); }
-.nav-call { justify-self: end; padding: 11px 17px; border: 1px solid var(--ink); border-radius: 999px; font-size: 0.72rem; font-weight: 800; text-decoration: none; transition: color 0.2s, background 0.2s, transform 0.2s; }
+.header-actions { display: flex; justify-self: end; align-items: center; gap: 10px; }
+.language-toggle { min-width: 42px; min-height: 42px; padding: 8px; border: 1px solid var(--line); border-radius: 999px; color: var(--ink); background: transparent; font-family: var(--font-cjk), var(--font-sans), sans-serif; font-size: 0.7rem; font-weight: 800; cursor: pointer; transition: color 0.2s, background 0.2s, transform 0.2s; }
+.language-toggle:hover { color: var(--white); background: var(--pink); transform: translateY(-2px); }
+.nav-call { padding: 11px 17px; border: 1px solid var(--ink); border-radius: 999px; font-size: 0.72rem; font-weight: 800; text-decoration: none; transition: color 0.2s, background 0.2s, transform 0.2s; }
 .nav-call:hover { color: var(--white); background: var(--ink); transform: translateY(-2px); }
 .nav-call:active, .button:active { transform: translateY(1px) scale(0.98); }
 .menu-toggle { display: none; width: 44px; height: 44px; padding: 0; border: 0; background: transparent; }
